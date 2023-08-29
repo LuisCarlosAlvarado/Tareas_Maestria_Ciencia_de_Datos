@@ -11,20 +11,6 @@ data = pd.read_csv('bundesliga_player.csv')
 # Mostrar información básica sobre el DataFrame
 print(data.info())
 #%%
-
-# Variables con missing values
-#plt.figure()
-#msno.bar(data)
-#plt.show()
-
-#%% Selección de variables
-#OverallQual: calidad general del material y del acabado
-#OverallCond: condición general
-#GarageArea: tamaño del garaje en pies cuadrados (1ft=0.305mts)
-#GrLivArea: superficie habitable por encima del nivel del suelo en pies cuadrados
-#FullBath: baños completos sobre el nivel del suelo
-#BedroomAbvGr: número de dormitorios por encima del nivel del sótano
-#SalePrice: Precio de venta
 selected_columns = ['age', 'height', 'nationality', 'price', 'max_price', 'position', 'foot']
 data = data[selected_columns]
 
